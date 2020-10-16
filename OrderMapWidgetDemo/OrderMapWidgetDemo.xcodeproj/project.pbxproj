@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89BD74FC25394BA800D02B5A /* OrderMapWidgetDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD74FB25394BA800D02B5A /* OrderMapWidgetDemoApp.swift */; };
+		89BD74FE25394BA800D02B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD74FD25394BA800D02B5A /* ContentView.swift */; };
+		89BD750025394BA900D02B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD74FF25394BA900D02B5A /* Assets.xcassets */; };
+		89BD750325394BA900D02B5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD750225394BA900D02B5A /* Preview Assets.xcassets */; };
+		89BD750E25394BA900D02B5A /* OrderMapWidgetDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD750D25394BA900D02B5A /* OrderMapWidgetDemoTests.swift */; };
+		89BD751925394BA900D02B5A /* OrderMapWidgetDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD751825394BA900D02B5A /* OrderMapWidgetDemoUITests.swift */; };
+		89BD753025394BBA00D02B5A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD752F25394BBA00D02B5A /* WidgetKit.framework */; };
+		89BD753225394BBA00D02B5A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD753125394BBA00D02B5A /* SwiftUI.framework */; };
+		89BD753525394BBA00D02B5A /* OrderMapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD753425394BBA00D02B5A /* OrderMapWidget.swift */; };
+		89BD753825394BBC00D02B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD753725394BBC00D02B5A /* Assets.xcassets */; };
+		89BD753A25394BBC00D02B5A /* OrderMapWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 89BD753625394BBA00D02B5A /* OrderMapWidget.intentdefinition */; };
+		89BD753B25394BBC00D02B5A /* OrderMapWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 89BD753625394BBA00D02B5A /* OrderMapWidget.intentdefinition */; };
+		89BD753E25394BBC00D02B5A /* OrderMapWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 89BD752D25394BBA00D02B5A /* OrderMapWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89BD750A25394BA900D02B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89BD74F025394BA800D02B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89BD74F725394BA800D02B5A;
+			remoteInfo = OrderMapWidgetDemo;
+		};
+		89BD751525394BA900D02B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89BD74F025394BA800D02B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89BD74F725394BA800D02B5A;
+			remoteInfo = OrderMapWidgetDemo;
+		};
+		89BD753C25394BBC00D02B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89BD74F025394BA800D02B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89BD752C25394BBA00D02B5A;
+			remoteInfo = OrderMapWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		89BD754225394BBC00D02B5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				89BD753E25394BBC00D02B5A /* OrderMapWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		89BD74F825394BA800D02B5A /* OrderMapWidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderMapWidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BD74FB25394BA800D02B5A /* OrderMapWidgetDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMapWidgetDemoApp.swift; sourceTree = "<group>"; };
+		89BD74FD25394BA800D02B5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89BD74FF25394BA900D02B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89BD750225394BA900D02B5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89BD750425394BA900D02B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BD750925394BA900D02B5A /* OrderMapWidgetDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMapWidgetDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BD750D25394BA900D02B5A /* OrderMapWidgetDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMapWidgetDemoTests.swift; sourceTree = "<group>"; };
+		89BD750F25394BA900D02B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BD751425394BA900D02B5A /* OrderMapWidgetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMapWidgetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BD751825394BA900D02B5A /* OrderMapWidgetDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMapWidgetDemoUITests.swift; sourceTree = "<group>"; };
+		89BD751A25394BA900D02B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BD752D25394BBA00D02B5A /* OrderMapWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OrderMapWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BD752F25394BBA00D02B5A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		89BD753125394BBA00D02B5A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		89BD753425394BBA00D02B5A /* OrderMapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMapWidget.swift; sourceTree = "<group>"; };
+		89BD753625394BBA00D02B5A /* OrderMapWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OrderMapWidget.intentdefinition; sourceTree = "<group>"; };
+		89BD753725394BBC00D02B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89BD753925394BBC00D02B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89BD74F525394BA800D02B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD750625394BA900D02B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD751125394BA900D02B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD752A25394BBA00D02B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD753225394BBA00D02B5A /* SwiftUI.framework in Frameworks */,
+				89BD753025394BBA00D02B5A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89BD74EF25394BA800D02B5A = {
+			isa = PBXGroup;
+			children = (
+				89BD74FA25394BA800D02B5A /* OrderMapWidgetDemo */,
+				89BD750C25394BA900D02B5A /* OrderMapWidgetDemoTests */,
+				89BD751725394BA900D02B5A /* OrderMapWidgetDemoUITests */,
+				89BD753325394BBA00D02B5A /* OrderMapWidget */,
+				89BD752E25394BBA00D02B5A /* Frameworks */,
+				89BD74F925394BA800D02B5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89BD74F925394BA800D02B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89BD74F825394BA800D02B5A /* OrderMapWidgetDemo.app */,
+				89BD750925394BA900D02B5A /* OrderMapWidgetDemoTests.xctest */,
+				89BD751425394BA900D02B5A /* OrderMapWidgetDemoUITests.xctest */,
+				89BD752D25394BBA00D02B5A /* OrderMapWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89BD74FA25394BA800D02B5A /* OrderMapWidgetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89BD74FB25394BA800D02B5A /* OrderMapWidgetDemoApp.swift */,
+				89BD74FD25394BA800D02B5A /* ContentView.swift */,
+				89BD74FF25394BA900D02B5A /* Assets.xcassets */,
+				89BD750425394BA900D02B5A /* Info.plist */,
+				89BD750125394BA900D02B5A /* Preview Content */,
+			);
+			path = OrderMapWidgetDemo;
+			sourceTree = "<group>";
+		};
+		89BD750125394BA900D02B5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				89BD750225394BA900D02B5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89BD750C25394BA900D02B5A /* OrderMapWidgetDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				89BD750D25394BA900D02B5A /* OrderMapWidgetDemoTests.swift */,
+				89BD750F25394BA900D02B5A /* Info.plist */,
+			);
+			path = OrderMapWidgetDemoTests;
+			sourceTree = "<group>";
+		};
+		89BD751725394BA900D02B5A /* OrderMapWidgetDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89BD751825394BA900D02B5A /* OrderMapWidgetDemoUITests.swift */,
+				89BD751A25394BA900D02B5A /* Info.plist */,
+			);
+			path = OrderMapWidgetDemoUITests;
+			sourceTree = "<group>";
+		};
+		89BD752E25394BBA00D02B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89BD752F25394BBA00D02B5A /* WidgetKit.framework */,
+				89BD753125394BBA00D02B5A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89BD753325394BBA00D02B5A /* OrderMapWidget */ = {
+			isa = PBXGroup;
+			children = (
+				89BD753425394BBA00D02B5A /* OrderMapWidget.swift */,
+				89BD753625394BBA00D02B5A /* OrderMapWidget.intentdefinition */,
+				89BD753725394BBC00D02B5A /* Assets.xcassets */,
+				89BD753925394BBC00D02B5A /* Info.plist */,
+			);
+			path = OrderMapWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89BD74F725394BA800D02B5A /* OrderMapWidgetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BD751D25394BA900D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetDemo" */;
+			buildPhases = (
+				89BD74F425394BA800D02B5A /* Sources */,
+				89BD74F525394BA800D02B5A /* Frameworks */,
+				89BD74F625394BA800D02B5A /* Resources */,
+				89BD754225394BBC00D02B5A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89BD753D25394BBC00D02B5A /* PBXTargetDependency */,
+			);
+			name = OrderMapWidgetDemo;
+			productName = OrderMapWidgetDemo;
+			productReference = 89BD74F825394BA800D02B5A /* OrderMapWidgetDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89BD750825394BA900D02B5A /* OrderMapWidgetDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BD752025394BA900D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetDemoTests" */;
+			buildPhases = (
+				89BD750525394BA900D02B5A /* Sources */,
+				89BD750625394BA900D02B5A /* Frameworks */,
+				89BD750725394BA900D02B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89BD750B25394BA900D02B5A /* PBXTargetDependency */,
+			);
+			name = OrderMapWidgetDemoTests;
+			productName = OrderMapWidgetDemoTests;
+			productReference = 89BD750925394BA900D02B5A /* OrderMapWidgetDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89BD751325394BA900D02B5A /* OrderMapWidgetDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BD752325394BA900D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetDemoUITests" */;
+			buildPhases = (
+				89BD751025394BA900D02B5A /* Sources */,
+				89BD751125394BA900D02B5A /* Frameworks */,
+				89BD751225394BA900D02B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89BD751625394BA900D02B5A /* PBXTargetDependency */,
+			);
+			name = OrderMapWidgetDemoUITests;
+			productName = OrderMapWidgetDemoUITests;
+			productReference = 89BD751425394BA900D02B5A /* OrderMapWidgetDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		89BD752C25394BBA00D02B5A /* OrderMapWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BD753F25394BBC00D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetExtension" */;
+			buildPhases = (
+				89BD752925394BBA00D02B5A /* Sources */,
+				89BD752A25394BBA00D02B5A /* Frameworks */,
+				89BD752B25394BBA00D02B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderMapWidgetExtension;
+			productName = OrderMapWidgetExtension;
+			productReference = 89BD752D25394BBA00D02B5A /* OrderMapWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89BD74F025394BA800D02B5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					89BD74F725394BA800D02B5A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					89BD750825394BA900D02B5A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 89BD74F725394BA800D02B5A;
+					};
+					89BD751325394BA900D02B5A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 89BD74F725394BA800D02B5A;
+					};
+					89BD752C25394BBA00D02B5A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 89BD74F325394BA800D02B5A /* Build configuration list for PBXProject "OrderMapWidgetDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89BD74EF25394BA800D02B5A;
+			productRefGroup = 89BD74F925394BA800D02B5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89BD74F725394BA800D02B5A /* OrderMapWidgetDemo */,
+				89BD750825394BA900D02B5A /* OrderMapWidgetDemoTests */,
+				89BD751325394BA900D02B5A /* OrderMapWidgetDemoUITests */,
+				89BD752C25394BBA00D02B5A /* OrderMapWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89BD74F625394BA800D02B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD750325394BA900D02B5A /* Preview Assets.xcassets in Resources */,
+				89BD750025394BA900D02B5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD750725394BA900D02B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD751225394BA900D02B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD752B25394BBA00D02B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD753825394BBC00D02B5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89BD74F425394BA800D02B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD74FE25394BA800D02B5A /* ContentView.swift in Sources */,
+				89BD753B25394BBC00D02B5A /* OrderMapWidget.intentdefinition in Sources */,
+				89BD74FC25394BA800D02B5A /* OrderMapWidgetDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD750525394BA900D02B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD750E25394BA900D02B5A /* OrderMapWidgetDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD751025394BA900D02B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD751925394BA900D02B5A /* OrderMapWidgetDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD752925394BBA00D02B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD753A25394BBC00D02B5A /* OrderMapWidget.intentdefinition in Sources */,
+				89BD753525394BBA00D02B5A /* OrderMapWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89BD750B25394BA900D02B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89BD74F725394BA800D02B5A /* OrderMapWidgetDemo */;
+			targetProxy = 89BD750A25394BA900D02B5A /* PBXContainerItemProxy */;
+		};
+		89BD751625394BA900D02B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89BD74F725394BA800D02B5A /* OrderMapWidgetDemo */;
+			targetProxy = 89BD751525394BA900D02B5A /* PBXContainerItemProxy */;
+		};
+		89BD753D25394BBC00D02B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89BD752C25394BBA00D02B5A /* OrderMapWidgetExtension */;
+			targetProxy = 89BD753C25394BBC00D02B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		89BD751B25394BA900D02B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89BD751C25394BA900D02B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89BD751E25394BA900D02B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OrderMapWidgetDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OrderMapWidgetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89BD751F25394BA900D02B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OrderMapWidgetDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OrderMapWidgetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89BD752125394BA900D02B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderMapWidgetDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderMapWidgetDemo.app/OrderMapWidgetDemo";
+			};
+			name = Debug;
+		};
+		89BD752225394BA900D02B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderMapWidgetDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderMapWidgetDemo.app/OrderMapWidgetDemo";
+			};
+			name = Release;
+		};
+		89BD752425394BA900D02B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderMapWidgetDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrderMapWidgetDemo;
+			};
+			name = Debug;
+		};
+		89BD752525394BA900D02B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderMapWidgetDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrderMapWidgetDemo;
+			};
+			name = Release;
+		};
+		89BD754025394BBC00D02B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderMapWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemo.OrderMapWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89BD754125394BBC00D02B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrderMapWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sk.OrderMapWidgetDemo.OrderMapWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89BD74F325394BA800D02B5A /* Build configuration list for PBXProject "OrderMapWidgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89BD751B25394BA900D02B5A /* Debug */,
+				89BD751C25394BA900D02B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89BD751D25394BA900D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89BD751E25394BA900D02B5A /* Debug */,
+				89BD751F25394BA900D02B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89BD752025394BA900D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89BD752125394BA900D02B5A /* Debug */,
+				89BD752225394BA900D02B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89BD752325394BA900D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89BD752425394BA900D02B5A /* Debug */,
+				89BD752525394BA900D02B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89BD753F25394BBC00D02B5A /* Build configuration list for PBXNativeTarget "OrderMapWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89BD754025394BBC00D02B5A /* Debug */,
+				89BD754125394BBC00D02B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89BD74F025394BA800D02B5A /* Project object */;
+}
