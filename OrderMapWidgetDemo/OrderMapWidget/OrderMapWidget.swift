@@ -10,12 +10,6 @@ import SwiftUI
 import Intents
 import MapKit
 
-let tabs = [OrderTabEntry(imageIcon: "", title: "代付款"),
-            OrderTabEntry(imageIcon: "", title: "代收货"),
-            OrderTabEntry(imageIcon: "", title: "代评价"),
-            OrderTabEntry(imageIcon: "", title: "退货/售后")]
-let orderMapInfo = OrderMapEntry(title: "我的订单", tabs: tabs, shopIcon: "", content: "北京市东城区建国门街道1号", lat: 39.999919, lng: 116.387976)
-
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         return SimpleEntry(date: Date(), configuration: ConfigurationIntent(), orderMapInfo: orderMapInfo)
@@ -141,7 +135,7 @@ struct LargeOrderMapView: View {
             HStack {
                 OrderLogisticInfoView(entry: entry.orderMapInfo)
                     .frame(width: 100, height: .infinity, alignment: .center)
-                    .background(Color.red)
+                    .background(Color.gray)
                     .cornerRadius(20)
                 MapView()
             }.frame(width: .infinity, height: .infinity, alignment: .center)
