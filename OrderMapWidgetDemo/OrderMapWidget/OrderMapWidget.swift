@@ -67,16 +67,6 @@ struct OrderMapWidgetEntryView : View {
     }
 }
 
-struct DiamondBackground: View {
-    var body: some View {
-        VStack {
-            Rectangle()
-                .fill(Color.yellow)
-                .frame(width: 60, height: 60, alignment: .center).cornerRadius(6)
-        }
-    }
-}
-
 @main
 struct OrderMapWidget: Widget {
     let kind: String = "OrderMapWidget"
@@ -109,8 +99,15 @@ struct SmallOrderMapView: View {
         VStack {
             MapView()
             HStack {
-                Image(entry.orderMapInfo.shopIcon).background(DiamondBackground()).frame(width: 40, height: 40, alignment: .center).cornerRadius(10).padding(EdgeInsets(top: 6, leading: 6, bottom: 10, trailing: 0))
-                Text(entry.orderMapInfo.content).font(.subheadline).foregroundColor(.secondary)
+                Image(entry.orderMapInfo.shopIcon)
+                    .resizable()
+                    .frame(width: 40, height: 40, alignment: .center)
+                    .background(Color.yellow)
+                    .cornerRadius(10)
+                    .padding(EdgeInsets(top: 6, leading: 6, bottom: 10, trailing: 0))
+                Text(entry.orderMapInfo.content)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
             }
         }
         
@@ -134,9 +131,12 @@ struct LargeOrderMapView: View {
     let entry: SimpleEntry
     var body: some View {
         VStack {
-            Text(entry.orderMapInfo.title)
-                .frame(width: .infinity, height: 20, alignment: .center)
-                .padding()
+            HStack {
+                Text(entry.orderMapInfo.title)
+                    .frame(width: .infinity, height: 20, alignment: .center)
+                    .padding()
+                Spacer()
+            }
             OrderTabInfoView(tabs: entry.orderMapInfo.tabs)
             HStack {
                 OrderLogisticInfoView(entry: entry.orderMapInfo)
@@ -173,13 +173,14 @@ struct OrderTabInfoView: View {
                         .resizable()
                         .frame(width: 60, height: 60, alignment: .center)
                         .clipShape(Circle())
-                        .border(Color.yellow, width: 1)
+                        .overlay(Circle().stroke(Color.red, lineWidth: 1.0))
+                        .shadow(radius: 10)
                     Text(tab.title)
                         .frame(width: .infinity, height: 20, alignment: .center)
                         .foregroundColor(.secondary)
                 }
             }
-        }).background(Color.blue)
+        })
     }
 }
 
@@ -187,8 +188,16 @@ struct OrderLogisticInfoView: View {
     let entry: OrderMapEntry
     var body: some View {
         VStack {
-            Image(entry.shopIcon).background(DiamondBackground()).frame(width: 60, height: 60, alignment: .center).cornerRadius(10).padding(EdgeInsets(top: 6, leading: 6, bottom: 10, trailing: 0))
-            Text(entry.content).font(.subheadline).foregroundColor(.secondary)
+            Spacer()
+            Image(entry.shopIcon)
+                .resizable()
+                .background(Color.yellow)
+                .frame(width: 60, height: 60, alignment: .center).cornerRadius(10)
+                .padding(EdgeInsets(top: 6, leading: 6, bottom: 10, trailing: 0))
+            Text(entry.content)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            Spacer()
         }.frame(width: 100, height: .infinity, alignment: .center)
     }
 }
